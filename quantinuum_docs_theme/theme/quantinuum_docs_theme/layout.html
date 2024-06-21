@@ -4,51 +4,10 @@
 {% block extrahead %}
 {{ super() }}
 <script>
-  console.log(JSON.parse('{{ theme_options|tojson }}'))
-  const navTextLinks = [
-  {
-    title: 'API Docs',
-    href: '/api-docs',
-    pathMatch: 'somewhere',  },
-  {
-    title: 'Examples',
-    href: '/examples',
-    pathMatch: 'somewhere',
-  },
-  {
-    title: 'Blog',
-    href: '/blog/',
-    pathMatch: 'somewhere',
-  },
-  {
-    title: 'User Manual',
-    href: '/user-manual',
-    pathMatch: 'somewhere',
-  },
-  ]
-
-  const navProductName = "TKET"
-
-  const navIconLinks = [
-  {
-    title: 'TKET Github',
-    href: 'https://github.com/CQCL/tket',
-    pathMatch: 'somewhere',
-        iconImageURL: '/_static/github.svg'
-  },
-  {
-    title: 'TKET Slack Channel',
-    href: 'https://tketusers.slack.com/',
-    pathMatch: 'somewhere',
-        iconImageURL: '/_static/slack.svg'
-  },
-  {
-    title: 'TKET Stack Exchange',
-    href: 'https://quantumcomputing.stackexchange.com/questions/tagged/pytket',
-    pathMatch: 'somewhere',
-        iconImageURL: '/_static/stack.svg'
-  },
-  ]
+  const options = JSON.parse('{{ theme_options|tojson }}')
+  const navTextLinks = options['navTextLinks']
+  const navProductName = options['navProductName']
+  const navIconLinks = options['navIconLinks']
 </script>
 <link rel="stylesheet" href="/_static/tokens.css" />
 <link rel="stylesheet" href="/_static/styles.css" />
