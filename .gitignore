@@ -2,3 +2,16 @@
 .nodeenv 
 .devcontainer
 node_modules
+dist
+
+**/target
+**/.idea/**
+**/.vscode/**
+**/.DS_Store
+**/venv
+**/.coverage
+**/htmlcov/**
+**/.vscode/**
+.env
+.venv
+**/*.ipynb
