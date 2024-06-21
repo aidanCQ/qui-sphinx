@@ -1,7 +1,7 @@
 {
     "name": "quantinuum_docs_theme",
     "scripts": {
-      "build": "echo 'no build'"
+      "build": "rm -rf ./dist && cp -R ./src/ ./dist/"
     },
     "devDependencies": {
       "axe-core": "^4.6.3",
