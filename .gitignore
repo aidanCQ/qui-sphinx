@@ -1,0 +1,5 @@
+.venv 
+.nodeenv 
+.devcontainer
+dist
+node_modules
