@@ -4,8 +4,9 @@
 {% block extrahead %}
 {{ super() }}
 <script>
-  //const navTextLinksFromGlobal = '{{ theme_helloWorld }}'
-  //console.log(navTextLinksFromGlobal)
+  const a = '{{ theme_options.helloWorld }}'
+  const b = '{{ theme_helloWorld }}'
+  console.log({a, b})
   const navTextLinks = [
   {
     title: 'API Docs',
