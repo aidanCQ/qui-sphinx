@@ -11,6 +11,7 @@ def extend_html_context(app, pagename, templatename, context, doctree):
      # Add ``sphinx_version_info`` tuple for use in Jinja templates
      context['sphinx_version_info'] = sphinx_version
      context['theme_options'] = get_theme_options_dict(app);
+     print(context['theme_options'])
 
 def setup(app: Sphinx) -> Dict[str, str]:
     """Setup the Sphinx application."""

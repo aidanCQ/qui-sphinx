@@ -4,9 +4,7 @@
 {% block extrahead %}
 {{ super() }}
 <script>
-
-  const b = JSON.stringify('{{ theme_options }}')
-  console.log({ b})
+  console.log('{{ theme_options }}')
   const navTextLinks = [
   {
     title: 'API Docs',
