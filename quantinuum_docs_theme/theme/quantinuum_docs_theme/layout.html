@@ -5,7 +5,7 @@
 {{ super() }}
 <script>
 
-  const b = '{{ theme_helloWorld }}'
+  const b = JSON.stringify('{{ theme_options }}')
   console.log({ b})
   const navTextLinks = [
   {
