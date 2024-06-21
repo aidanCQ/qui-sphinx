@@ -4,11 +4,13 @@ from pathlib import Path
 from typing import Dict
 from sphinx.application import Sphinx
 from sphinx import version_info as sphinx_version
+from pydata_sphinx_theme.utils import get_theme_options_dict
 __version__ = "0.0.1"
 
 def extend_html_context(app, pagename, templatename, context, doctree):
      # Add ``sphinx_version_info`` tuple for use in Jinja templates
      context['sphinx_version_info'] = sphinx_version
+     context['theme_options'] = get_theme_options_dict(app);
 
 def setup(app: Sphinx) -> Dict[str, str]:
     """Setup the Sphinx application."""
