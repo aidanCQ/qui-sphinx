@@ -1,5 +1,4 @@
-{% extends "layout.html" %}
-{# ref: https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html #}
+{% extends "base.html" %}
 
 {% block extrahead %}
 {{ super() }}
@@ -36,14 +35,14 @@
     }
 </style>
 {% endblock %}
+{% block body -%}
+{{ super() }}
 
-{% block body %}
+
 <nav style="all:unset;position:sticky;top:0;z-index:1021;width:100%;">
     <header class="nexus-nav"></header>
 </nav>
-{{ super() }}
+<script type="text/javascript" src="/_static/index.global.js"></script>
+
 {% endblock %}
 
-{% block footer %}
-<script type="text/javascript" src="/_static/index.global.js"></script>
-{% endblock %}
