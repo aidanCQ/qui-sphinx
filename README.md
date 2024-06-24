@@ -31,7 +31,6 @@ html_theme_options = {
      {
          "title": string,
          "href": string,
-         "pathMatch": string,
          "iconImageURL": string (i.e. "/_static/github.svg"),
      },
  ],
