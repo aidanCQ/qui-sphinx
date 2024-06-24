@@ -26,15 +26,15 @@ html_theme_options = {
             "href": string,
         },
     ],
-    "navProductName": string,
-    "navIconLinks": [
-        {
-            "title": string,
-            "href": string,
-            "pathMatch": string,
-            "iconImageURL": string (i.e. "/_static/github.svg"),
-        },
-    ],
+ "navProductName": string,
+ "navIconLinks": [
+     {
+         "title": string,
+         "href": string,
+         "pathMatch": string,
+         "iconImageURL": string (i.e. "/_static/github.svg"),
+     },
+ ],
 }
 extensions = [
     ...,
