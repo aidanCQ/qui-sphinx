@@ -1,9 +1,43 @@
 Quantinuum Docs Sphinx Theme
 
-# /quantinuum_docs_theme 
-Contains the theme definition and assets.
-
-
-
-# Build the sphinx theme
+# Build the sphinx theme locally
 `./build.sh # Outputs sphinx theme files in /dist.`
+
+# Install the theme from release branch
+```bash
+pip install git+https://github.com/aidanCQ/qui-sphinx.git@dist
+```
+```bash
+poetry add git+https://github.com/aidanCQ/qui-sphinx.git@dist
+```
+
+# Configure the theme in sphinx
+
+In `conf.py` add:
+
+```python
+html_theme_options = {
+ ...,
+ "navTextLinks": [
+        {
+            "title": string,
+            "href": string,
+        },
+    ],
+    "navProductName": string,
+    "navIconLinks": [
+        {
+            "title": string,
+            "href": string,
+            "pathMatch": string,
+            "iconImageURL": string (i.e. "/_static/github.svg"),
+        },
+    ],
+}
+extensions = [
+    ...,
+    "quantinuum_docs_theme",
+]
+
+html_theme = "quantinuum_docs_theme"
+```
