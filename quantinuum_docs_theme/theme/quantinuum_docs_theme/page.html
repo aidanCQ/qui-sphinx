@@ -2,9 +2,9 @@
 
 {% block extrahead %}
 <script>
-
+  console.log({})
   const navTextLinks = JSON.parse('{{ theme_navTextLinks|tojson }}')
-  const navProductName = JSON.parse('{{ theme_navProductName|tojson }}')
+  const navProductName = '{{ theme_navProductName }}'
   const navIconLinks = JSON.parse('{{ theme_navIconLinks|tojson }}')
 </script>
 
