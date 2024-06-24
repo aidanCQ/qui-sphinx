@@ -1,9 +1,9 @@
-Quantinuum Docs Sphinx Theme
+# Quantinuum Docs Sphinx Theme
 
-# Build the sphinx theme locally
+### Build the sphinx theme locally
 `./build.sh # Outputs sphinx theme files in /dist.`
 
-# Install the theme from release branch
+### Install the theme from release branch
 ```bash
 pip install git+https://github.com/aidanCQ/qui-sphinx.git@dist
 ```
@@ -11,7 +11,7 @@ pip install git+https://github.com/aidanCQ/qui-sphinx.git@dist
 poetry add git+https://github.com/aidanCQ/qui-sphinx.git@dist
 ```
 
-# Configure the theme in sphinx
+### Configure the theme in sphinx
 
 In `conf.py` add:
 
