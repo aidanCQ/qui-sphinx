@@ -6,4 +6,4 @@ Contains the theme definition and assets.
 
 
 # Build the sphinx theme
-`./build-theme.sh # Outputs sphinx theme files in /dist.`
+`./build.sh # Outputs sphinx theme files in /dist.`
