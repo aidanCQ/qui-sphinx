@@ -2,7 +2,7 @@
 
 ### Build the sphinx theme locally
 ```
-./build.sh # Outputs sphinx theme files in /dist.`
+./build.sh # Outputs sphinx theme files in /dist.
 ```
 
 ### Install the theme from release branch
