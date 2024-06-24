@@ -622,6 +622,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   position: relative;
 }
 
+.use-tailwind .sticky {
+  position: sticky;
+}
+
 .use-tailwind .inset-0 {
   inset: 0px;
 }
@@ -721,6 +725,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   margin-right: -0.25rem;
 }
 
+.use-tailwind .mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
 .use-tailwind .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -739,12 +748,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   margin-left: 0.25rem;
 }
 
+.use-tailwind .ml-2 {
+  margin-left: 0.5rem;
+}
+
+.use-tailwind .ml-4 {
+  margin-left: 1rem;
+}
+
 .use-tailwind .ml-auto {
   margin-left: auto;
 }
 
 .use-tailwind .mr-2 {
   margin-right: 0.5rem;
+}
+
+.use-tailwind .mr-3 {
+  margin-right: 0.75rem;
+}
+
+.use-tailwind .mr-4 {
+  margin-right: 1rem;
 }
 
 .use-tailwind .mt-1 {
@@ -776,6 +801,13 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 1;
+}
+
+.use-tailwind .line-clamp-2 {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 
 .use-tailwind .block {
@@ -818,6 +850,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 2.5rem;
 }
 
+.use-tailwind .h-14 {
+  height: 3.5rem;
+}
+
 .use-tailwind .h-2 {
   height: 0.5rem;
 }
@@ -842,6 +878,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   height: 1.25rem;
 }
 
+.use-tailwind .h-6 {
+  height: 1.5rem;
+}
+
 .use-tailwind .h-7 {
   height: 1.75rem;
 }
@@ -852,6 +892,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .h-9 {
   height: 2.25rem;
+}
+
+.use-tailwind .h-\[1\.15rem\] {
+  height: 1.15rem;
 }
 
 .use-tailwind .h-\[1px\] {
@@ -930,6 +974,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   width: 1rem;
 }
 
+.use-tailwind .w-6 {
+  width: 1.5rem;
+}
+
 .use-tailwind .w-64 {
   width: 16rem;
 }
@@ -948,6 +996,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .w-9 {
   width: 2.25rem;
+}
+
+.use-tailwind .w-\[1\.15rem\] {
+  width: 1.15rem;
 }
 
 .use-tailwind .w-\[100px\] {
@@ -1031,6 +1083,11 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.use-tailwind .rotate-0 {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .use-tailwind .rotate-180 {
   --tw-rotate: 180deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1043,6 +1100,18 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .rotate-90 {
   --tw-rotate: 90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.use-tailwind .scale-0 {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.use-tailwind .scale-100 {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
@@ -1196,6 +1265,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   margin-bottom: calc(1rem * var(--tw-space-y-reverse));
 }
 
+.use-tailwind .place-self-center {
+  place-self: center;
+}
+
 .use-tailwind .overflow-auto {
   overflow: auto;
 }
@@ -1222,6 +1295,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .break-words {
   overflow-wrap: break-word;
+}
+
+.use-tailwind .rounded {
+  border-radius: 0.25rem;
 }
 
 .use-tailwind .rounded-\[inherit\] {
@@ -1279,6 +1356,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .border-t {
   border-top-width: 1px;
+}
+
+.use-tailwind .border-border {
+  border-color: hsl(var(--border));
 }
 
 .use-tailwind .border-destructive {
@@ -1564,6 +1645,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   vertical-align: middle;
 }
 
+.use-tailwind .font-inter {
+  font-family: Inter, sans-serif;
+}
+
 .use-tailwind .text-\[0\.8rem\] {
   font-size: 0.8rem;
 }
@@ -1581,6 +1666,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 .use-tailwind .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
+}
+
+.use-tailwind .font-bold {
+  font-weight: 700;
 }
 
 .use-tailwind .font-medium {
@@ -1601,6 +1690,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .leading-none {
   line-height: 1;
+}
+
+.use-tailwind .leading-snug {
+  line-height: 1.375;
 }
 
 .use-tailwind .tracking-tight {
@@ -1663,8 +1756,17 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   text-decoration-line: underline;
 }
 
+.use-tailwind .no-underline {
+  text-decoration-line: none;
+}
+
 .use-tailwind .underline-offset-4 {
   text-underline-offset: 4px;
+}
+
+.use-tailwind .antialiased {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 .use-tailwind .opacity-0 {
@@ -2008,6 +2110,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .hover\:opacity-100:hover {
   opacity: 1;
+}
+
+.use-tailwind .hover\:opacity-70:hover {
+  opacity: 0.7;
 }
 
 .use-tailwind .focus\:bg-accent:focus {
@@ -2639,6 +2745,28 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.use-tailwind .dark\:-rotate-90:is(.theme-mode-dark *) {
+  --tw-rotate: -90deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.use-tailwind .dark\:rotate-0:is(.theme-mode-dark *) {
+  --tw-rotate: 0deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.use-tailwind .dark\:scale-0:is(.theme-mode-dark *) {
+  --tw-scale-x: 0;
+  --tw-scale-y: 0;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+.use-tailwind .dark\:scale-100:is(.theme-mode-dark *) {
+  --tw-scale-x: 1;
+  --tw-scale-y: 1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .use-tailwind .dark\:border-destructive:is(.theme-mode-dark *) {
   border-color: hsl(var(--destructive));
 }
@@ -2663,6 +2791,10 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
   .use-tailwind .sm\:mt-0 {
     margin-top: 0px;
+  }
+
+  .use-tailwind .sm\:block {
+    display: block;
   }
 
   .use-tailwind .sm\:max-w-sm {
@@ -2723,6 +2855,14 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 @media (min-width: 768px) {
   .use-tailwind .md\:absolute {
     position: absolute;
+  }
+
+  .use-tailwind .md\:flex {
+    display: flex;
+  }
+
+  .use-tailwind .md\:hidden {
+    display: none;
   }
 
   .use-tailwind .md\:w-\[var\(--radix-navigation-menu-viewport-width\)\] {
