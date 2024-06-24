@@ -1,0 +1,48 @@
+{% extends "pydata_sphinx_theme/layout.html" %}
+{# ref: https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html #}
+
+{% block extrahead %}
+{{ super() }}
+<script>
+  const options = JSON.parse('{{ theme_options|tojson }}')
+  const navTextLinks = options['navTextLinks']
+  const navProductName = options['navProductName']
+  const navIconLinks = options['navIconLinks']
+</script>
+<link rel="stylesheet" href="/_static/tokens.css" />
+<link rel="stylesheet" href="/_static/styles.css" />
+<link rel="stylesheet" href="/_static/styles/sphinx_book_theme.css" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+  />
+<style>
+    .navbar-brand {
+        display: none;
+        margin-bottom: -1rem;
+    }
+    
+    .sidebar-primary-items__start {
+        margin-top: -1rem;
+    }
+    
+    .bd-sidebar, .bd-header-article, .bd-sidebar-secondary {
+        top: calc(3.5rem - 0px);
+    
+    }
+</style>
+{% endblock %}
+
+{% block body_tag %}
+<nav style="all:unset;position:sticky;top:0;z-index:1021;width:100%;">
+    <header class="nexus-nav"></header>
+</nav>
+{{ super() }}
+{% endblock %}
+
+{% block footer %}
+<script type="text/javascript" src="/_static/index.global.js"></script>
+{% endblock %}
