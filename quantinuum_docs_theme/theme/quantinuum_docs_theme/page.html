@@ -3,7 +3,9 @@
 {% block extrahead %}
 <script>
   console.log('{{ theme_navProductName }}')
-
+  // const navTextLinks = JSON.parse('{{ theme_navTextLinks|tojson }}')
+   // const navProductName = '{{ theme_navProductName }}'
+    // const navIconLinks = JSON.parse('{{ theme_navIconLinks|tojson }}') 
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,18 +17,9 @@
 
 
 <style>
-    .navbar-brand {
-        display: none;
-        margin-bottom: -1rem;
-    }
-    
-    .sidebar-primary-items__start {
-        margin-top: -1rem;
-    }
-    
-    .bd-sidebar, .bd-header-article, .bd-sidebar-secondary {
+
+    .sidebar-sticky {
         top: calc(3.5rem - 0px);
-    
     }
 </style>
 {% endblock %}
