@@ -1,4 +1,4 @@
-{% extends "!layout.html" %}
+{% extends "base.html" %}
 {# ref: https://github.com/pydata/pydata-sphinx-theme/blob/master/src/pydata_sphinx_theme/theme/pydata_sphinx_theme/layout.html #}
 
 {% block extrahead %}
@@ -37,7 +37,7 @@
 </style>
 {% endblock %}
 
-{% block body_tag %}
+{% block body %}
 <nav style="all:unset;position:sticky;top:0;z-index:1021;width:100%;">
     <header class="nexus-nav"></header>
 </nav>
