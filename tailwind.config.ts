@@ -4,7 +4,7 @@ import plugin from 'tailwindcss/plugin'
 import { tailwindTheme } from '@cqcl/quantinuum-ui'
 export default {
     content: [
-        './src/**/*.{js,ts,jsx,tsx,mdx,html}',
+        './ui/**/*.{js,ts,jsx,tsx,mdx,html}',
         path.join(
           path.dirname(require.resolve('@cqcl/quantinuum-ui')),
           '**/*.{js,ts,jsx,tsx,mdx}'
