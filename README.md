@@ -1,5 +1,7 @@
 # Quantinuum Docs Sphinx Theme
 
+This theme is based on [furo](https://pradyunsg.me/furo/).
+
 ### Build the sphinx theme locally
 ```
 ./build.sh # Outputs sphinx theme files in /dist.
