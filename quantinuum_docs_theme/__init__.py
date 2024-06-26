@@ -8,9 +8,8 @@ from furo import _html_page_context
 __version__ = "0.0.1"
 
 def setup_my_func(app, pagename, templatename, context, doctree):
-     # The template function
     context['user_config'] = app.config
-    print(context['user_config'] )
+    app.add_js_file("index.global.js", priority=200, loading_method="async")
 
 def setup(app: Sphinx) -> Dict[str, str]:
     """Setup the Sphinx application."""
