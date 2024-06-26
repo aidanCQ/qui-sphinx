@@ -3,9 +3,14 @@
 from pathlib import Path
 from typing import Dict
 from sphinx.application import Sphinx
+from furo import _html_page_context
 
 __version__ = "0.0.1"
 
+def setup_my_func(app, pagename, templatename, context, doctree):
+     # The template function
+    context['user_config'] = app.config
+    print(context['user_config'] )
 
 def setup(app: Sphinx) -> Dict[str, str]:
     """Setup the Sphinx application."""
@@ -14,6 +19,5 @@ def setup(app: Sphinx) -> Dict[str, str]:
 
     app.add_html_theme("quantinuum_docs_theme", str(theme_path))
     # Include component templates
-    # app.config.templates_path.append(str(theme_path / "components"))
-
+    app.connect("html-page-context", setup_my_func)
     return {"parallel_read_safe": True, "parallel_write_safe": True}
