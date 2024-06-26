@@ -2,10 +2,9 @@
 
 {% block extrahead %}
 <script>
-  console.log('{{ theme_navProductName }}')
-  // const navTextLinks = JSON.parse('{{ theme_navTextLinks|tojson }}')
-   // const navProductName = '{{ theme_navProductName }}'
-    // const navIconLinks = JSON.parse('{{ theme_navIconLinks|tojson }}') 
+  const navTextLinks = JSON.parse('{{ user_config.html_theme_options.navTextLinks|tojson }}')
+   const navProductName = '{{ user_config.html_theme_options.navProductName }}'
+  const navIconLinks = JSON.parse('{{ user_config.html_theme_options.navIconLinks|tojson }}') 
 </script>
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />

@@ -15,4 +15,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [project.entry-points]
-"sphinx.html_themes" = { quantinuum_docs_theme = "quantinuum_docs_theme" }
+"sphinx.html_themes" = { quantinuum_docs_theme = "." }

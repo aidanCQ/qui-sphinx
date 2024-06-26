@@ -15,3 +15,7 @@ dist
 .env
 .venv
 **/*.ipynb
+
+quantinuum_docs_theme/theme/quantinuum_docs_theme/static/index.global.js
+quantinuum_docs_theme/theme/quantinuum_docs_theme/static/styles.css
+quantinuum_docs_theme/theme/quantinuum_docs_theme/static/tokens.css
