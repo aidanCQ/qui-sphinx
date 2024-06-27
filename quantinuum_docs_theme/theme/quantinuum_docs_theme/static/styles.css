@@ -1,3 +1,15 @@
 html {
-  font-family: 
+  display: unset;
+}
+
+.main {
+  margin-top: 3.5rem;
+}
+
+
+@media (max-width: 67em) {
+  .main {
+
+    margin-top: 0rem;
+  }
 }
