@@ -7,9 +7,53 @@ Welcome to .'s documentation!
 =============================
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :caption: core:
+    :maxdepth: 2
 
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    a.rst
+    
+    
 
 
 Indices and tables
