@@ -8,6 +8,6 @@
     @apply border-border;
   }
   body {
-    @apply bg-background font-inter text-sm text-foreground antialiased;
+    @apply bg-background text-sm text-foreground antialiased;
   }
 }

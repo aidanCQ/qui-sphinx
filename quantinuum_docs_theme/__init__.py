@@ -9,7 +9,7 @@ __version__ = "0.0.1"
 
 def setup_my_func(app, pagename, templatename, context, doctree):
     context['user_config'] = app.config
-    app.add_js_file("index.global.js", priority=200, loading_method="async")
+    # app.add_js_file("index.global.js", priority=200, loading_method="async")
 
 def setup(app: Sphinx) -> Dict[str, str]:
     """Setup the Sphinx application."""

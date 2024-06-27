@@ -5,7 +5,6 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-  //@ts-ignore
 } from '@cqcl/quantinuum-ui'
 
 import { Link, navConfig } from './config'

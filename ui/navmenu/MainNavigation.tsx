@@ -17,7 +17,7 @@ export const MainNavigation = (props: {
         <div className='block md:hidden mr-3'>
             <MobileMenu></MobileMenu>
             </div>
-          <div className=" whitespace-nowrap flex items-center gap-2">
+          <div className="whitespace-nowrap flex items-center gap-2">
             <QuantinuumLogo></QuantinuumLogo>
             <div className="text-muted-foreground text-xs font-medium flex items-center gap-1.5">
               <div>|</div><div>{navConfig.navProductName}</div>

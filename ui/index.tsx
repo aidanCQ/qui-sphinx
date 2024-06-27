@@ -9,9 +9,9 @@ import { MainNavigation } from "./navmenu/MainNavigation";
     mountElement.appendChild(renderIn)
   
     const root = createRoot(renderIn)
-
+    console.log('f1irst Render')
     root.render(
-      <div className="use-tailwind">  <div className="font-inter antialiased"><MainNavigation activePath=""></MainNavigation> </div></div>
+      <div className="use-tailwind">  <div className="antialiased" style={{fontFamily: `Inter, ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"`}}><MainNavigation activePath=""></MainNavigation> </div></div>
     )
   })()
 
