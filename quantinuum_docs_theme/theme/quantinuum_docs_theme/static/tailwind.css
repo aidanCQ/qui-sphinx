@@ -452,7 +452,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind body {
   background-color: hsl(var(--background));
-  font-family: Inter, sans-serif;
   font-size: 0.875rem;
   line-height: 1.25rem;
   color: hsl(var(--foreground));
@@ -1643,10 +1642,6 @@ Constrain images and videos to the parent width and preserve their intrinsic asp
 
 .use-tailwind .align-middle {
   vertical-align: middle;
-}
-
-.use-tailwind .font-inter {
-  font-family: Inter, sans-serif;
 }
 
 .use-tailwind .text-\[0\.8rem\] {

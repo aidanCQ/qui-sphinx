@@ -1,28 +1,48 @@
 {% extends "furo/base.html" %}
 
 {% block extrahead %}
+
+<link rel="stylesheet" href="/_static/tokens.css"/>
+<link rel="stylesheet" href="/_static/styles.css"/>
+<link rel="stylesheet" href="/_static/tailwind.css"/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="preload"
+as="style">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+<style>  
+  * {
+    text-rendering: optimizeSpeed;
+  }
+  .sidebar-sticky {
+    top: calc(3.5rem - 0px);
+    height: unset;
+  }
+  
+  @media (min-width: 97em) {
+    html {
+      font-size: 100% !important;
+    }
+  }
+  
+</style>
+{% endblock %}
+
+{% block body -%}
+<script>0</script>
+{{ super() }}
+{% include "partials/icons.html" %}
+
+<nav style="position:sticky;top:0;z-index:1021;width:100%;">
+    <header class="nexus-nav"></header>
+</nav>
 <script>
   const navTextLinks = JSON.parse('{{ user_config.html_theme_options.navTextLinks|tojson }}')
    const navProductName = '{{ user_config.html_theme_options.navProductName }}'
   const navIconLinks = JSON.parse('{{ user_config.html_theme_options.navIconLinks|tojson }}') 
 </script>
+<script type="text/javascript" src="/_static/index.global.js"></script>
 
-<link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
-      rel="stylesheet"
-  />
-
-{% endblock %}
-
-{% block body -%}
-{{ super() }}
-{% include "partials/icons.html" %}
-
-<nav style="all:unset;position:sticky;top:0;z-index:1021;width:100%;">
-    <header class="nexus-nav"></header>
-</nav>
 
 
 <input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation">
