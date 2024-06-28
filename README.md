@@ -19,10 +19,10 @@ templates_path = ["quantinuum_docs_theme/_templates"]
 html_static_path = ['quantinuum_docs_theme/_static', '_static']
 ```
 
-Create a file ./_static/nav.js containing: 
+Create a file `./_static/nav-config.js` containing: 
 
 ```js
-const navOptions = {
+const navConfig = {
  "navTextLinks": [
         {
             "title": string,
