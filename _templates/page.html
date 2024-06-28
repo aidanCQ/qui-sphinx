@@ -33,10 +33,11 @@ as="style">
 <nav style="position:fixed;top:0;z-index:1021;width:100%;">
     <div class="nexus-nav"></div>
 </nav>
+<script type="text/javascript" src="/_static/nav-config.js"></script>
 <script>
-  const navTextLinks = JSON.parse('{{ user_config.html_theme_options.navTextLinks|tojson }}')
-   const navProductName = '{{ user_config.html_theme_options.navProductName }}'
-  const navIconLinks = JSON.parse('{{ user_config.html_theme_options.navIconLinks|tojson }}') 
+  const navTextLinks = navConfig.navTextLinks;
+   const navProductName = navConfig.navProductName;
+  const navIconLinks = navConfig.navIconLinks;
 </script>
 <script type="text/javascript" src="/_static/index.global.js"></script>
 
