@@ -8,7 +8,7 @@ This theme is intended to customize [furo](https://pradyunsg.me/furo/).
 Add the following git URL as a submodule in the same directory as `conf.py`
 
 ```bash
-git submodule add git+https://github.com/aidanCQ/qui-sphinx.git@dist
+git submodule add -b dist https://github.com/aidanCQ/qui-sphinx.git
 ```
 
 In `conf.py` add:
