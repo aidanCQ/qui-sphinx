@@ -1,27 +1,28 @@
-# Quantinuum Docs Sphinx Theme
+# Quantinuum Docs Sphinx Templates
 
-This theme is based on [furo](https://pradyunsg.me/furo/).
+This theme is intended to customize [furo](https://pradyunsg.me/furo/).
 
-### Build the sphinx theme locally
-```
-./build.sh # Outputs sphinx theme files in /dist.
-```
 
-### Install the theme from release branch
+### Using the templates in your Sphinx docs code
+
+Add the following git URL as a submodule in the same directory as `conf.py`
+
 ```bash
-pip install git+https://github.com/aidanCQ/qui-sphinx.git@dist
+git submodule add git+https://github.com/aidanCQ/qui-sphinx.git@dist
 ```
-```bash
-poetry add git+https://github.com/aidanCQ/qui-sphinx.git@dist
-```
-
-### Configure the theme in sphinx
 
 In `conf.py` add:
 
 ```python
-html_theme_options = {
- ...,
+html_theme = "furo"
+templates_path = ["quantinuum_docs_theme/_templates"]
+html_static_path = ['quantinuum_docs_theme/_static', '_static']
+```
+
+Create a file ./_static/nav.js containing: 
+
+```js
+const navOptions = {
  "navTextLinks": [
         {
             "title": string,
@@ -37,10 +38,4 @@ html_theme_options = {
      },
  ],
 }
-extensions = [
-    ...,
-    "quantinuum_docs_theme",
-]
-
-html_theme = "quantinuum_docs_theme"
 ```
