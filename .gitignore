@@ -16,7 +16,7 @@ dist
 .venv
 **/*.ipynb
 
-quantinuum_docs_theme/theme/quantinuum_docs_theme/static/index.global.js
-quantinuum_docs_theme/theme/quantinuum_docs_theme/static/tailwind.css
-quantinuum_docs_theme/theme/quantinuum_docs_theme/static/tokens.css
+quantinuum_docs_theme/_static/index.global.js
+quantinuum_docs_theme/_static/tailwind.css
+quantinuum_docs_theme/_static/tokens.css
 demo/build
