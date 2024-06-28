@@ -15,8 +15,8 @@ In `conf.py` add:
 
 ```python
 html_theme = "furo"
-templates_path = ["quantinuum_docs_theme/_templates"]
-html_static_path = ['quantinuum_docs_theme/_static', '_static']
+templates_path = ["qui-sphinx/_templates"]
+html_static_path = ['qui-sphinx/_static', '_static']
 ```
 
 Create a file `./_static/nav-config.js` containing: 
